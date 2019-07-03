@@ -10,6 +10,14 @@
     ],
     "skipLibCheck": true,
     "types": [],
-    "module": "es2015"
+    "module": "es2015",
+    "paths": {
+      "ng-masonry-grid": [
+        "dist/ng-masonry-grid"
+      ],
+      "ng-masonry-grid/*": [
+        "dist/ng-masonry-grid/*"
+      ]
+    }
   }
 }

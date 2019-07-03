@@ -33,5 +33,5 @@ Desktop.ini
 # Library files
 src/*
 build/*
-playground/*
+ng-masonry-grid-example/*
 package-lock.json

@@ -5,23 +5,23 @@
   "projects": {
     "ng-masonry-grid-example": {
       "root": "",
-      "sourceRoot": "playground",
+      "sourceRoot": "ng-masonry-grid-example",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "playdist",
-            "index": "playground/index.html",
-            "main": "playground/main.ts",
-            "tsConfig": "playground/tsconfig.app.json",
-            "polyfills": "playground/polyfills.ts",
+            "index": "ng-masonry-grid-example/index.html",
+            "main": "ng-masonry-grid-example/main.ts",
+            "tsConfig": "ng-masonry-grid-example/tsconfig.app.json",
+            "polyfills": "ng-masonry-grid-example/polyfills.ts",
             "assets": [
-              "playground/assets",
-              "playground/favicon.ico"
+              "ng-masonry-grid-example/assets",
+              "ng-masonry-grid-example/favicon.ico"
             ],
             "styles": [
-              "playground/styles.css"
+              "ng-masonry-grid-example/styles.css"
             ],
             "scripts": []
           },
@@ -38,8 +38,8 @@
               "buildOptimizer": true,
               "fileReplacements": [
                 {
-                  "replace": "playground/environments/environment.ts",
-                  "with": "playground/environments/environment.prod.ts"
+                  "replace": "ng-masonry-grid-example/environments/environment.ts",
+                  "with": "ng-masonry-grid-example/environments/environment.prod.ts"
                 }
               ]
             }
@@ -65,17 +65,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "playground/test.ts",
+            "main": "ng-masonry-grid-example/test.ts",
             "karmaConfig": "./karma.conf.js",
-            "polyfills": "playground/polyfills.ts",
-            "tsConfig": "playground/tsconfig.spec.json",
+            "polyfills": "ng-masonry-grid-example/polyfills.ts",
+            "tsConfig": "ng-masonry-grid-example/tsconfig.spec.json",
             "scripts": [],
             "styles": [
-              "playground/styles.css"
+              "ng-masonry-grid-example/styles.css"
             ],
             "assets": [
-              "playground/assets",
-              "playground/favicon.ico"
+              "ng-masonry-grid-example/assets",
+              "ng-masonry-grid-example/favicon.ico"
             ]
           }
         },
@@ -110,6 +110,33 @@
           "options": {
             "tsConfig": [
               "e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-masonry-grid": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "src/tsconfig.lib.json",
+            "project": "ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.lib.json",
+              "src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
