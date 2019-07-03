@@ -1,0 +1,12 @@
+{
+  "name": "ng-masonry-grid-example",
+  "dependencies": {
+    "@angular/cdk": "^8.0.2",
+    "@angular/material": "^8.0.2",
+    "ng-masonry-grid": "file:../../dist/ng-masonry-grid"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.1.0",
+    "@angular/core": "^8.1.0"
+  }
+}

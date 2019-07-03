@@ -18,6 +18,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "masonry-grid": [
+        "dist/masonry-grid",
+        "dist/masonry-grid",
+        "dist/masonry-grid"
+      ],
+      "masonry-grid/*": [
+        "dist/masonry-grid/*",
+        "dist/masonry-grid/*",
+        "dist/masonry-grid/*"
+      ]
+    }
   }
 }

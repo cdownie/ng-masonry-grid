@@ -1,16 +1,53 @@
 {
-  "name": "ng-masonry-grid-example",
-  "version": "0.0.0",
+  "name": "ng-masonry-grid",
+  "version": "2.0.0",
+  "description": "Angular 8+ masonry grid component with CSS3 animations on scroll.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shailu4u/ng-masonry-grid.git"
+  },
+  "author": {
+    "name": "Shailendra Kumar",
+    "email": "shailu.snist@gmail.com"
+  },
+  "keywords": [
+    "angular 6 masonry",
+    "angular2-masonry",
+    "masonry",
+    "masonry layout",
+    "desandro",
+    "angular4-masonry",
+    "masonry animations",
+    "ng2 masonry",
+    "ng masonry",
+    "ng2 masonry layout"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shailu4u/ng-masonry-grid.git/issues"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve ng-masonry-grid-example",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.1",
+    "tslib": "^1.9.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "~8.1.0",
+    "@angular/core": "~8.1.0",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.801.0",
+    "@angular-devkit/build-ng-packagr": "~0.801.0",
     "@angular/animations": "~8.1.0",
     "@angular/common": "~8.1.0",
     "@angular/compiler": "~8.1.0",
@@ -19,13 +56,11 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
+    "web-animations-js": "^2.3.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.801.0",
+    "zone.js": "~0.9.1",
     "@angular/cli": "~8.1.0",
     "@angular/compiler-cli": "~8.1.0",
     "@angular/language-service": "~8.1.0",
@@ -40,8 +75,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^5.1.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "tsickle": "^0.35.0",
     "tslint": "~5.11.0",
     "typescript": "~3.4.5"
   }
